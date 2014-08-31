@@ -44,7 +44,7 @@ end
 
 Then(/^I should see the ([\w \& ]+) Listings$/) do |listname|
 	if listname == "CarFinder"
-		var = query("TextView", :text)
+		var = query("* id:'label_text_view'", :text)
 		puts var
 	elsif listname == "More"
 		var = query("* id:'label_text_view'", :text)
